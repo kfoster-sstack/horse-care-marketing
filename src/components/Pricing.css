@@ -1,0 +1,271 @@
+/* ============================================
+   Pricing Section
+   Schneider's Saddlery - Horse Care Tracker
+   ============================================ */
+
+.pricing-section {
+  padding: 100px 0;
+  background-color: #f8f7f4;
+  position: relative;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.pricing-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.pricing-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+/* Card */
+.pricing-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  border: 2px solid transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighted Card (Team Plan) */
+.pricing-card--highlighted {
+  border-color: #d4a853;
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(212, 168, 83, 0.2);
+  padding: 48px 32px;
+  z-index: 2;
+}
+
+.pricing-card--highlighted:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 16px 56px rgba(212, 168, 83, 0.28);
+}
+
+/* Badge */
+.pricing-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #d4a853, #c49a42);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 24px;
+  border-radius: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(212, 168, 83, 0.3);
+}
+
+/* Card Header */
+.pricing-card-header {
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 24px;
+}
+
+.pricing-plan-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.pricing-card--highlighted .pricing-plan-name {
+  color: #8B0000;
+}
+
+.pricing-price-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.pricing-price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1;
+}
+
+.pricing-period {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.pricing-description {
+  font-size: 0.95rem;
+  color: #777;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Card Body */
+.pricing-card-body {
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pricing-feature:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.pricing-check-icon {
+  color: #d4a853;
+  flex-shrink: 0;
+}
+
+.pricing-card--highlighted .pricing-check-icon {
+  color: #8B0000;
+}
+
+/* Card Footer */
+.pricing-card-footer {
+  text-align: center;
+}
+
+/* Buttons */
+.pricing-button {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.pricing-button--outline {
+  background: transparent;
+  color: #8B0000;
+  border: 2px solid #8B0000;
+}
+
+.pricing-button--outline:hover {
+  background: #8B0000;
+  color: #ffffff;
+}
+
+.pricing-button--primary {
+  background: linear-gradient(135deg, #8B0000, #a01010);
+  color: #ffffff;
+  border: 2px solid #8B0000;
+  box-shadow: 0 4px 16px rgba(139, 0, 0, 0.3);
+}
+
+.pricing-button--primary:hover {
+  background: linear-gradient(135deg, #a01010, #b81818);
+  box-shadow: 0 6px 24px rgba(139, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .pricing-card--highlighted {
+    transform: scale(1);
+    order: -1;
+  }
+
+  .pricing-card--highlighted:hover {
+    transform: translateY(-4px);
+  }
+
+  .pricing-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 64px 0;
+  }
+
+  .pricing-header {
+    margin-bottom: 40px;
+  }
+
+  .pricing-title {
+    font-size: 1.75rem;
+  }
+
+  .pricing-card {
+    padding: 32px 24px;
+  }
+
+  .pricing-card--highlighted {
+    padding: 40px 24px;
+  }
+
+  .pricing-price {
+    font-size: 2.5rem;
+  }
+}

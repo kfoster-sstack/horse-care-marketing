@@ -1,0 +1,159 @@
+/* ==========================================================================
+   How It Works Section
+   Schneider's Saddlery Horse Care Tracker
+   ========================================================================== */
+
+.how-it-works-section {
+  padding: 6rem 1.5rem;
+  background-color: #fff;
+}
+
+.how-it-works-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header
+   ========================================================================== */
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.how-it-works-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Steps Row
+   ========================================================================== */
+
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.step-item {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+/* Numbered Circle
+   ========================================================================== */
+
+.step-number-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B0000 0%, #a51c1c 100%);
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(139, 0, 0, 0.25);
+}
+
+.step-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+/* Connector Line
+   ========================================================================== */
+
+.step-connector {
+  position: absolute;
+  top: 32px;
+  right: 50%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #d4a853 0%, #e0be7a 50%, #d4a853 100%);
+  z-index: 1;
+}
+
+/* Text
+   ========================================================================== */
+
+.step-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.75rem;
+}
+
+.step-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 280px;
+}
+
+/* Responsive — Tablet
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .how-it-works-section {
+    padding: 4rem 1rem;
+  }
+
+  .how-it-works-heading {
+    font-size: 2rem;
+  }
+
+  .steps-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .step-item {
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .step-content {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Vertical connector for stacked layout */
+  .step-connector {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 2px;
+    height: 40px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(180deg, #d4a853 0%, #e0be7a 50%, #d4a853 100%);
+  }
+
+  .step-description {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Features Section
+   Schneider's Saddlery Horse Care Tracker
+   ========================================================================== */
+
+.features-section {
+  padding: 6rem 1.5rem;
+  background-color: #fafafa;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header
+   ========================================================================== */
+
+.features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.features-subtitle {
+  font-size: 1.125rem;
+  color: #555;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid
+   ========================================================================== */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Card
+   ========================================================================== */
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border-color: #d4a853;
+}
+
+/* Icon
+   ========================================================================== */
+
+.feature-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8B0000 0%, #a51c1c 100%);
+  margin-bottom: 1.25rem;
+}
+
+.feature-icon {
+  color: #fff;
+}
+
+/* Text
+   ========================================================================== */
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.75rem;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Responsive — Tablet
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .features-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive — Mobile
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .features-section {
+    padding: 4rem 1rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .features-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .features-heading {
+    font-size: 1.75rem;
+  }
+
+  .features-subtitle {
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
