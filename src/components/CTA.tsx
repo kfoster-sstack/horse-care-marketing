@@ -11,7 +11,7 @@ const CTA: React.FC = () => {
         <p className="cta-subtitle">
           Join hundreds of barn owners and trainers who trust Schneider&apos;s Horse Care Tracker.
         </p>
-        <a href="#" className="cta-button">
+        <a href="https://kfoster-sstack.github.io/horse-care-saas/#/signup" className="cta-button" target="_blank" rel="noopener noreferrer">
           Start Your Free Trial
           <ArrowRight size={20} />
         </a>

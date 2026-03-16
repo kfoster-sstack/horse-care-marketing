@@ -1,7 +1,7 @@
 import { Heart, Calendar, Shield, ChevronRight, Activity } from 'lucide-react';
 import './Hero.css';
 
-const APP_URL = '#'; // TODO: Update to https://horse-care-saas.vercel.app
+const APP_URL = 'https://kfoster-sstack.github.io/horse-care-saas/#/signup';
 
 const Hero = () => {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {

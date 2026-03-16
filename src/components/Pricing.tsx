@@ -27,7 +27,7 @@ const tiers: PricingTier[] = [
       '1 user',
     ],
     buttonText: 'Get Started Free',
-    buttonLink: '#',
+    buttonLink: 'https://kfoster-sstack.github.io/horse-care-saas/#/signup',
   },
   {
     name: 'Team',
@@ -42,7 +42,7 @@ const tiers: PricingTier[] = [
       'Reminders & alerts',
     ],
     buttonText: 'Start Free Trial',
-    buttonLink: '#',
+    buttonLink: 'https://kfoster-sstack.github.io/horse-care-saas/#/signup',
     highlighted: true,
     badge: 'Most Popular',
   },
@@ -60,7 +60,7 @@ const tiers: PricingTier[] = [
       'Advanced analytics',
     ],
     buttonText: 'Contact Sales',
-    buttonLink: '#',
+    buttonLink: 'https://kfoster-sstack.github.io/horse-care-saas/#/signup',
   },
 ];
 

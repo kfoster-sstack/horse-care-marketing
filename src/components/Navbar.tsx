@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 
-const APP_URL = '#'; // TODO: Update to https://horse-care-saas.vercel.app
+const APP_URL = 'https://kfoster-sstack.github.io/horse-care-saas/#/signup';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

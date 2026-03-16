@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: '/horse-care-marketing/',
   plugins: [react()],
   server: { port: 5175, open: true },
   build: { outDir: 'dist', sourcemap: true },
